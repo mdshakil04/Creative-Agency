@@ -1,0 +1,121 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.header-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.header-text{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-bottom:150px ;
+}
+.header-image{
+    background-color: #f4f4f4;
+    margin-left: 450px;
+    margin-right: 0px;
+}
+.header-image img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 660px;
+    margin-left:300px;
+    margin-right: 100px;
+}
+.readMoreButton{
+    border-style: none;
+    width: 150px;
+    height: 45px;
+    background-color: #FBE001;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.header-text h1{
+    font-size: 4rem;
+}
+.serirvices-intro{
+    text-align: center;
+    margin-top: 100px;
+}
+/* Service section style */
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    /* margin-top: 20px; */
+    margin-left: 50px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.service-img{
+    margin-right: 20px;
+}
+/* Navbar Style start */
+.nav-menu{
+    display: flex;
+    justify-content: center;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+}
+.nav-menu li a:before{
+     content: '';
+     position: absolute;
+     top: 70%;
+     bottom: 50%;
+     width: 0%;
+     height: 3%;
+     background: #ff7230;
+     transition: all 0.3s linear;
+}
+.nav-menu li a:hover::before{
+    width: 70%;
+}
+/* Navbar Style End */
+@media only screen and (max-width: 767px) {
+    /* Styles for small devices (up to 767px) */
+    body{
+        /* background-color: #FBE001; */
+    }
+    .header-container{
+        display: grid;
+    }
+    .header-text{
+        background-color: red;
+        position: inherit;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    .header-image{
+        background-color: aquamarine;
+        width: 400px;
+        margin-left: 0;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .header-text h1{
+        font-size: 1.5rem;
+    }
+  }
