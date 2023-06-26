@@ -36,19 +36,23 @@ body{
     font-weight: 600;
     border-radius: 10px;
 }
+.readMoreButton:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
 .header-text h1{
     font-size: 4rem;
 }
+/* Service section style */
 .serirvices-intro{
     text-align: center;
     margin-top: 100px;
 }
-/* Service section style */
 .services-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 50px;
-    /* margin-top: 20px; */
     margin-left: 50px;
 }
 .service{
@@ -89,7 +93,85 @@ body{
 .nav-menu li a:hover::before{
     width: 70%;
 }
+/* Gallery section start */
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gallery-img{
+    margin: 20px;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.gallery-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery-img:hover{
+     transform: scale(1.1);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+     transition: 0.5s;
+}
 /* Navbar Style End */
+.about-container{
+    display: flex;
+    margin: 50px;
+}
+.about-text{
+    width: 50%;
+    margin-right: 50px;
+}
+.about-image{
+    width: 50%;
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    width: 100%;
+}
+/* Team-Member Style */
+.Team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 100px;
+    width: 100%;
+    /* margin-left: 50px; */
+}
+.newsletter-container{
+    background-color: #f4f4f4;
+    height: 150px;
+    width: 1110px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 160px;
+    text-align: center;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+.input-container{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.input-field{
+    height: 45px;
+    width: 300px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 767px) {
     /* Styles for small devices (up to 767px) */
     body{
@@ -113,7 +195,7 @@ body{
         margin-left: 0;
     }
     .header-img{
-        width: 100%;
+        width: 400px;
     }
     .header-text h1{
         font-size: 1.5rem;
